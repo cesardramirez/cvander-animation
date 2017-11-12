@@ -1,0 +1,66 @@
+body {
+	background-color: lightblue;
+	margin: 0;
+}
+
+.cvander-landscape {
+	width: 1024px;
+	height: 243px;
+	background-image: url('../images/background.png');
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.contenedor {
+	height: 100vh;
+	width: 100vw;
+}
+
+.cvander {
+	width: 166px;
+	height: 171px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.cvander-body {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.cvander:hover .cvander-head {
+	animation: .5s cvander infinite;
+}
+
+.cvander:hover .cvander-ipad {
+	transform: rotate(-5deg) translate(5px, -5px);
+}
+
+.cvander-head {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: .3s;
+}
+
+.cvander-ipad {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	transition: .5s;
+}
+
+@keyframes cvander {
+	50% {
+		transform: translateY(5px) rotate(2deg);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
